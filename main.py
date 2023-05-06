@@ -122,13 +122,13 @@ def getAvgGrade():
     avg = sum / count
     if (avg >= 90):
       print(f"\n{student} current grades is A \n")
-    elif (avg >= 80 or avg < 90):
+    elif (avg >= 80 ): #or avg < 90): # false logic instead of using or replace with and boundedness scope entry L valid mistake for else if chain below
       print(f"\n{student} current grades is B \n")
-    elif (avg >= 70 or avg < 80):
+    elif (avg >= 70 ): #or avg < 80):
       print(f"\n{student} current grades is C \n")
-    elif (avg >= 60 or avg < 70):
+    elif (avg >= 60 ):#)or avg < 70):
       print(f"\n{student} current grades is D \n")
-    elif (avg >= 50 or avg < 60):
+    elif (avg >= 50 ):#or avg < 60):
       print(f"\n{student} current grades is E \n")
     else:
       print(f"{student} current grades is F ")
